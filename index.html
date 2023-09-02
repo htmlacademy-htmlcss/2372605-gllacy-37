@@ -3,10 +3,102 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <div class="main-page-container">
+      <header class="page-header">
+        <div class="logo-wrapper">
+          <a href="logo-link">
+            <img class="logo" src="images/header/logo.svg" width="137" height="56" alt="Gllacy Shop.">
+          </a>
+        </div>
+        <nav class="main-navigation">
+          <ul class="user-info-list">
+            <li class="user-info-item">
+              <a class="user-info-link catalog-button" href="#">
+                Каталог
+              </a>
+            </li>
+            <li class="user-info-item">
+              <a class="user-info-link delivery-button" href="#">
+                Доставка и оплата
+              </a>
+            </li>
+            <li class="user-info-item">
+              <a class="user-info-link about-button" href="#">
+                О компании
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="user-menu">
+          <a class="contact-phone" href="tel:+78005558628">
+            +7 800 555-86-28
+          </a>
+          <ul class="user-menu-list">
+            <li class="user-menu-item">
+              <a class="user-menu-link search-button">
+                <span class="visually-hidden">
+                  Поиск.
+                </span>
+              </a>
+            </li>
+            <li class="user-menu-item">
+              <a class="user-menu-link sign-in-button">
+                Вход
+              </a>
+            </li>
+            <li class="user-menu-item">
+              <a class="user-menu-link shopping-cart-button">
+                2 товара
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-container">
+        <h1 class="visually-hidden">
+          Интернет-магазин мороженного Глейси.
+        </h1>
+        <section class="main-page-slider">
+          <h2 class="visually-hidden">
+            Интересные предложения.
+          </h2>
+          <ol class="slider-list">
+            <li class="slider-item slider-item-current">
+              <div class="slider-content-wrapper">
+                <h3 class="slider-title">
+                  Нежный пломбир с&nbsp;клубничным джемом
+                </h3>
+                <p class="slider-subtitle">
+                  Натуральное мороженое из свежих сливок и&nbsp;молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
+                </p>
+                <button class="button order-button" type="button">
+                  Заказать
+                </button>
+              </div>
+              <div class="slider-image-wrapper">
+                <div class="current-image">
+                  <img class="" src="images/main-slider/product-1.png" width="327" height="507" alt="">
+                  <div class="slider-buttons-wrapper">
+                    <button class="slider-button slider-button-prev" type="button"></button>
+                    <button class="slider-button slider-button-next" type="button"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="additional-items-wrapper">
+                <div class="additional-items">
+                  <img class="" src="images/main-slider/product-2.png" width="66" height="150" alt="">
+                </div>
+                <div class="additional-items">
+                  <img class="" src="images/main-slider/product-3.png" width="66" height="150" alt="">
+                </div>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
