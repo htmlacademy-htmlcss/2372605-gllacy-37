@@ -85,9 +85,9 @@ img {
 }
 
 .main-page-container {
+  display: flex;
+  flex-direction: column;
   padding: 0 98px;
-  width: 100%;
-  height: 100%;
   background-color: #FEAFC3;
 }
 
@@ -264,6 +264,7 @@ img {
 
 .main-page-slider {
   position: relative;
+  margin-bottom: 80px;
   max-width: 1170px;
   max-height: 554px;
 }
@@ -399,4 +400,270 @@ img {
   border-radius: 50%;
   opacity: .4;
   z-index: -1;
+}
+
+
+/* Раздел с slider pagination  */
+
+.slider-pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  left: 0;
+  gap: 8px;
+  list-style-type: none;
+}
+
+.slider-pagination-item {
+  display: flex;
+}
+
+.slider-pagination-button {
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 50%;
+  background-color: #FCFCFC;
+  opacity: .3;
+  cursor: pointer;
+}
+
+.slider-pagination-button-current {
+  opacity: 1;
+}
+
+/* Раздел с slider-social-links  */
+
+.slider-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  right: 0;
+  gap: 16px;
+  list-style-type: none;
+}
+
+.slider-social-item {
+  display: flex;
+}
+
+.slider-social-link {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  outline: 2px solid rgba(255, 255, 255, .3);
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.telegram {
+  background-image: url("../images/main-slider/telegram.svg");
+}
+
+.vk {
+  background-image: url("../images/main-slider/vk.svg");
+}
+
+.youtube {
+  background-image: url("../images/main-slider/youtube.svg");
+}
+
+
+/* section order and recive */
+
+.order-recive-wrapper {
+  margin-bottom: 80px;
+  max-width: 1170px;
+  max-height: 416px;
+}
+
+.order-recive-title {
+  margin: 0 auto;
+  margin-bottom: 55px;
+  max-width: 435px;
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+  text-align: center;
+  color: #2D3440;
+}
+
+.order-recive-banners {
+  display: flex;
+  gap: 30px;
+}
+
+/* raspberries card and marshmallow card*/
+
+.raspberries-banner,
+.marshmallow-banner {
+  position: relative;
+  padding: 36px 218px 36px 36px;
+  max-width: 570px;
+  max-height: 268px;
+  border-radius: 16px;
+  background-color: #FF7799;
+}
+
+.raspberries-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 219px;
+  height: 268px;
+  background-image: url("../images/main-slider/raspberries-image.png");
+  background-repeat: no-repeat;
+}
+
+.marshmallow-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 219px;
+  height: 268px;
+  background-image: url("../images/main-slider/marshmallow-image.png");
+  background-repeat: no-repeat;
+}
+
+.raspberries-banner-content,
+.marshmallow-banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.raspberries-banner-title,
+.marshmallow-banner-title {
+  display: inline-block;
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #2D3440;
+}
+
+.raspberries-banner-subtitle,
+.marshmallow-banner-subtitle {
+  margin: 0;
+  color: #2D3440;
+}
+
+.want-gift-button {
+  max-width: 176px;
+}
+
+/* popular flavors section */
+
+.popular-flavors-wrapper {
+  margin-bottom: 80px;
+  max-width: 1170px;
+  max-height: 480px;
+}
+
+.popular-flavors-title {
+  margin: 0 auto;
+  margin-bottom: 56px;
+  max-width: 527px;
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+  text-align: center;
+  color: #2D3440;
+}
+
+/* popular flavors cards */
+
+.popular-flavors-list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  list-style-type: none;
+}
+
+.popular-flavors-item {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  max-width: 270px;
+  min-height: 332px;
+}
+
+.popular-flavors-content {
+  display: flex;
+  flex-direction: column;
+  padding: 133px 40px 24px;
+  max-width: 270px;
+  max-height: 281px;
+  border-radius: 8px;
+  background-color: #FCFCFC;
+}
+
+.popular-flavors-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 51px;
+}
+
+.ice-cream-image {
+  border-radius: 50%;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .1);
+}
+
+.popular-flavors-link {
+  display: inline-block;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+.ice-cream-title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #2D3440;
+}
+
+.ice-cream-subtitle {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #565C66;
+}
+
+.ice-cream-price-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ice-cream-price {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #2D3440;
+}
+
+.buy-ice-cream-button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 26px;
+  background-color: #FF2F64;
+  background-image: url("../images/main-slider/buy-ice-cream-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
