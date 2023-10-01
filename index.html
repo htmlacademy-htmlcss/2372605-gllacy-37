@@ -16,7 +16,7 @@
             <li class="user-info-item submenu-catalog">
               <a class="user-info-link catalog-button" href="#">
                 Каталог
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M3.808 7.053a.667.667 0 1 0-.943.943l4.66 4.66a.664.664 0 0 0 .955 0l4.661-4.66a.667.667 0 0 0-.942-.943l-4.196 4.195-4.195-4.195Z" clip-rule="evenodd"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M3.808 7.053a.667.667 0 1 0-.943.943l4.66 4.66a.664.664 0 0 0 .955 0l4.661-4.66a.667.667 0 0 0-.942-.943l-4.196 4.195-4.195-4.195Z" clip-rule="evenodd"/></svg>
               </a>
               <ul class="submenu-list">
                 <li class="submenu-item">
@@ -64,7 +64,7 @@
               </a>
             </li>
             <li class="user-menu-item user-menu-search">
-              <a class="user-menu-link search-button">
+              <a class="user-menu-link search-button" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M2.663 8.188a4.667 4.667 0 1 1 8.028 3.237.671.671 0 0 0-.123.124 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z" clip-rule="evenodd"/></svg>
                 <span class="visually-hidden">
                   Поиск.
@@ -77,17 +77,83 @@
                 <input class="seacrh-form-field" type="search" name="search" id="search" placeholder="Поиск по сайту">
               </form>
             </li>
-            <li class="user-menu-item">
-              <a class="user-menu-link sign-in-button">
+            <li class="user-menu-item user-sign-in">
+              <a class="user-menu-link sign-in-button" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M9 2.525c0-.369.298-.667.667-.667h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H9.667a.667.667 0 1 1 0-1.333h2.666A.666.666 0 0 0 13 13.19V3.858a.666.666 0 0 0-.667-.667H9.667A.667.667 0 0 1 9 2.525ZM5.862 4.72c.26-.26.682-.26.943 0l3.329 3.329a.69.69 0 0 1 .129.177.664.664 0 0 1-.13.774l-3.328 3.33a.667.667 0 1 1-.943-.944l2.195-2.195h-6.39a.667.667 0 1 1 0-1.333h6.39L5.862 5.663a.667.667 0 0 1 0-.943Z" clip-rule="evenodd"/></svg>
                 Вход
               </a>
+              <div class="sign-in-popover">
+                <div class="sign-in-popover-container">
+                  <div class="sign-in-popover-title-wrapper">
+                    <h2 class="sign-in-popover-title">
+                      Личный кабинет
+                    </h2>
+                  </div>
+                  <form class="sign-in-popover-form" action="https://echo.htmlacademy.ru/" method="post" id="sign-in-form">
+                    <div class="sign-in-form-username form-group">
+                      <label class="visually-hidden" for="sign-in-login">
+                        E-mail.
+                      </label>
+                      <input class="username-field sign-in-form-field" type="email" name="sign-in-login" id="sign-in-login" placeholder="email@example.com" required>
+                    </div>
+                    <div class="sign-in-form-password form-group">
+                      <label class="visually-hidden" for="sign-in-password">
+                        Пароль.
+                      </label>
+                      <input class="password-field sign-in-form-field" type="password" name="sign-in-password" id="sign-in-password" placeholder="Введите пароль" value="123456" required>
+                    </div>
+                    <div class="sign-in-submit-wrapper">
+                      <button class="additional-button" type="submit" form="sign-in-form">
+                        Войти
+                      </button>
+                      <div class="sign-in-link-wrapper">
+                        <a class="sign-in-forgotpassword sign-in-link" href="#">
+                          Забыли пароль?
+                        </a>
+                        <a class="sign-in-registration sign-in-link" href="#">
+                          Регистрация
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </li>
-            <li class="user-menu-item">
-              <a class="user-menu-link shopping-cart-button">
+            <li class="user-menu-item user-shopping-cart">
+              <a class="user-menu-link shopping-cart-button" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/></svg>
                 2 товара
               </a>
+              <div class="user-cart-popover">
+                <div class="user-cart-popover-container">
+                  <div class="user-cart-popover-title-wrapper">
+                    <h2 class="user-cart-popover-title">
+                      Корзина
+                    </h2>
+                  </div>
+                  <ul class="shopping-cart-list">
+                    <li class="shopping-cart-item">
+                      <a class="shopping-cart-link shopping-cart-img-wrapper" href="#">
+                        <img class="shopping-cart-img" src="images/shopping-cart-img/product-1.png" width="46" height="46" alt="">
+                      </a>
+                      <div class="cart-product-info">
+                        <a class="cart-product-title" href="#">
+                          Малинка
+                        </a>
+                        <p class="cart-product-weightprice">
+                          <span class="product-weight-counter">1</span> кг x <span class="product-price-counter">310</span> ₽
+                        </p>
+                      </div>
+                      <span class="cart-product-price">310 ₽</span>
+                      <button class="shopping-cart-close-button" type="button">
+                        <span class="visually-hidden">
+                          Удалить товар из корзины.
+                        </span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
           </ul>
         </nav>
