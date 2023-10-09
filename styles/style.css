@@ -48,7 +48,19 @@ body {
   font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
+
+}
+
+.pink-current {
   background-color: #FEAFC3;
+}
+
+.blue-current {
+ background-color: #69A9FF;
+}
+
+.yellow-current {
+  background-color: #FCC850;
 }
 
 img {
@@ -161,6 +173,18 @@ img {
   display: flex;
   margin-right: 16px;
   align-items: center;
+}
+
+.logo-link:hover {
+  opacity: .6;
+}
+
+.logo-link:focus-visible {
+  opacity: .6;
+}
+
+.logo-link:active {
+  opacity: .3;
 }
 
 .logo {
@@ -293,6 +317,18 @@ img {
   line-height: 20px;
   color: #2D3440;
   text-decoration: none;
+}
+
+.submenu-link:hover {
+  background-color: #FFCBD8;
+}
+
+.submenu-link:focus-visible {
+  background-color: #FF4A78;
+}
+
+.submenu-link:active {
+  background-color: #FF7799;
 }
 
 .catalog-button {
@@ -536,6 +572,10 @@ img {
   background-color: #FF4A78;
 }
 
+.user-sign-in:focus-within .user-menu-link:hover {
+  opacity: .6;
+}
+
 .sign-in-button {
   padding: 6px 16px;
   font-size: 14px;
@@ -567,6 +607,26 @@ img {
   z-index: 2;
 }
 
+.cart-empty {
+  display: none;
+  padding: 48px 0;
+  width: 288px;
+  min-height: 60px;
+  text-align: center;
+  box-shadow: 0 8px 16px 0 #2D34401F;
+}
+
+.title-cart-empty {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #2D3440;
+}
+
+.user-cart-popover-active {
+
+}
+
 .user-cart-popover-container {
 
 }
@@ -582,8 +642,13 @@ img {
 }
 
 .shopping-cart-list {
+  display: flex;
   padding: 0;
+  padding-bottom: 30px;
+  flex-direction: column;
   list-style-type: none;
+  border-bottom: 1px solid #E7E7E7;
+  gap: 24px;
 }
 
 .shopping-cart-item {
@@ -620,6 +685,18 @@ img {
   text-decoration: none;
 }
 
+.cart-product-title:hover {
+  opacity: .6;
+}
+
+.cart-product-title:focus-visible {
+  opacity: .6;
+}
+
+.cart-product-title:active {
+  opacity: .3;
+}
+
 .cart-product-weightprice {
   margin: 0;
   font-size: 14px;
@@ -636,11 +713,69 @@ img {
 }
 
 .cart-product-price {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.shopping-cart-close-button {
+  display: flex;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.shopping-cart-close-button:hover {
+  opacity: .6;
+}
+
+.shopping-cart-close-button:focus-visible {
+  opacity: .6;
+}
+
+.shopping-cart-close-button:active {
+  opacity: .3;
+}
+
+.shopping-cart-footer {
+  display: flex;
+  margin-top: 32px;
+  align-items: center;
+  gap: 32px;
+}
+
+.cart-total-price {
+  margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #2D3440;
+}
+
+.cart-total-price-counter {
 
 }
 
-.hopping-cart-close-button {
+.user-cart-popover:hover {
+  display: block;
+}
 
+.user-shopping-cart:focus-within .user-cart-popover-active {
+  display: block;
+}
+
+.user-shopping-cart:focus-within .user-menu-link:hover {
+  opacity: .6;
+}
+
+.user-shopping-cart:focus-within .user-menu-link {
+  color: #FCFCFC;
+  background-color: #FF4A78;
 }
 
 
@@ -661,11 +796,12 @@ img {
   display: flex;
   margin: 0;
   padding: 0;
+  flex-direction: column;
   list-style-type: none;
 }
 
 .slider-item {
-
+  display: none;
 }
 
 .slider-item-current {
@@ -724,7 +860,7 @@ img {
   transform: translateY(-50%);
   width: 328px;
   height: 312px;
-  background-color: #FFCBD8;
+  background-color: rgba(255, 255, 255, .33);
   border-radius: 50%;
   z-index: -1;
 }
@@ -1261,10 +1397,10 @@ img {
   flex-direction: column;
   padding: 33px 235px 68px 32px;
   gap: 13px;
-  background-image: url("");
-  background-size: ;
+  background-image: url("../images/main/news-image.png");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: ;
+  background-position: center;
 }
 
 .news-subscribe-label {
@@ -1670,6 +1806,18 @@ img {
   display: flex;
 }
 
+.footer-logo:hover {
+  opacity: .6;
+}
+
+.footer-logo:focus-visible {
+  opacity: .6;
+}
+
+.footer-logo:active {
+  opacity: .3;
+}
+
 .logo-copyright {
   position: relative;
   margin: 0;
@@ -1678,12 +1826,24 @@ img {
   color: #2D3440;
 }
 
-.html-academy-footer-text {
+.html-academy-footer-link {
   color: #2D3440;
   text-decoration: none;
 }
 
-.html-academy-footer-text::after {
+.html-academy-footer-link:hover {
+  opacity: .6;
+}
+
+.html-academy-footer-link:focus-visible {
+  opacity: .6;
+}
+
+.html-academy-footer-link:active {
+  opacity: .3;
+}
+
+.html-academy-footer-link::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1742,8 +1902,32 @@ img {
   color: #2D3440;
 }
 
+.breadcrumbs-link:hover {
+  opacity: .6;
+}
+
+.breadcrumbs-link:focus-visible {
+  opacity: .6;
+}
+
+.breadcrumbs-link:active {
+  opacity: .3;
+}
+
 .breadcrumbs-link-current {
 
+}
+
+.breadcrumbs-link-current:hover {
+  opacity: 1;
+}
+
+.breadcrumbs-link-current:focus-visible {
+  opacity: 1;
+}
+
+.breadcrumbs-link-current:active {
+  opacity: 1;
 }
 
 .breadcrumbs-link-current::after {
@@ -2102,4 +2286,96 @@ img {
   justify-content: center;
   text-decoration: none;
   outline: none;
+}
+
+
+/* modal */
+
+.modal-container {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  z-index: 3;
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 64px;
+  width: 570px;
+  min-height: 545px;
+  border-radius: 8px;
+  background-color: #FCFCFC;
+  box-shadow: 0 15px 40px 0 rgba(0, 0, 0, .12);
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 32px;
+  right: 32px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../images/modal/close-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  opacity: .6;
+}
+
+.modal-close-button:focus-visible {
+  opacity: .6;
+}
+
+.modal-close-button:active {
+  opacity: .3;
+}
+
+.modal-form {
+  display: grid;
+  gap: 16px;
+}
+
+.modal-form-field {
+  padding: 13px 15px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+
+.modal-message {
+  resize: none;
+}
+
+.modal-submit-button {
+  display: flex;
+  margin-top: 11px;
+  justify-self: flex-end;
 }
