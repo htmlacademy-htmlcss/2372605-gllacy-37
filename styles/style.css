@@ -1998,6 +1998,7 @@ img {
 }
 
 .sorting-control {
+  position: relative;
   padding: 8px 59px 8px 16px;
   max-width: 196px;
   font-size: 14px;
@@ -2007,6 +2008,9 @@ img {
   appearance: none;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, .3);
+  background-image: url("../images/main/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
   cursor: pointer;
 }
 
