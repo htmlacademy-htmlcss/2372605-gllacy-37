@@ -169,6 +169,10 @@ img {
   padding: 24px 0;
 }
 
+.catalog-header {
+  margin-bottom: 32px;
+}
+
 .logo-link {
   display: flex;
   margin-right: 16px;
@@ -194,16 +198,16 @@ img {
 .main-navigation {
   display: flex;
   width: 1170px;
-  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
 }
 
 .user-info-list {
-  display: grid;
+  display: flex;
   margin: 0;
   padding: 0;
-  grid-template-columns: repeat(3, auto);
-  min-width: 422px;
+  flex-wrap: wrap;
+  align-items: center;
   list-style-type: none;
 }
 
@@ -367,9 +371,9 @@ img {
   display: flex;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
   margin-left: auto;
   align-items: center;
-  justify-content: center;
   list-style-type: none;
   gap: 17px;
 }
@@ -1078,7 +1082,9 @@ img {
 
 .order-recive-banners-wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+  align-items: start;
 }
 
 /* raspberries card and marshmallow card*/
@@ -1162,6 +1168,7 @@ img {
   margin: 0;
   padding: 0;
   grid-template-columns: repeat(4, 1fr);
+  align-items: start;
   gap: 40px 30px;
   list-style-type: none;
 }
@@ -1384,6 +1391,7 @@ img {
   display: grid;
   margin-bottom: 80px;
   grid-template-columns: 1fr 1fr;
+  align-items: start;
   gap: 30px;
 }
 
@@ -1499,6 +1507,7 @@ img {
   margin-bottom: 80px;
   padding: 64px;
   padding-left: 100px;
+  align-items: center;
   gap: 135px;
   background-image: url("../images/main/delivery-background.png");
   background-size: cover;
@@ -1618,18 +1627,27 @@ img {
   z-index: 1;
 }
 
-.tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus-visible + .tooltip-text {
-  display: block;
-}
-
+.tooltip-text::before,
 .tooltip-text::after {
   content: "";
   position: absolute;
+  display: block;
+  top: 10px;
+  right: 100%;
   width: 14px;
-  height: 7px;
-  top: 0;
-  left: 0;
+  height: 14px;
+  border: 7px solid transparent;
+  border-right: 7px solid #B9B9B9;
+}
+
+.tooltip-text::after {
+  border-right: 7px solid #FCFCFC;
+  right: calc(100% - 1px);
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus-visible + .tooltip-text {
+  display: block;
 }
 
 .appointment-form-field {
@@ -1956,9 +1974,7 @@ img {
   display: flex;
   margin-bottom: 44px;
   flex-wrap: wrap;
-  max-width: 823px;
-  justify-content: space-between;
-  gap: 16px;
+  gap: 16px 24px;
 }
 
 .catalog-filter-group {
@@ -2247,6 +2263,7 @@ img {
   display: flex;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
