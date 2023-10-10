@@ -1801,7 +1801,7 @@ img {
 .about-info-link-current {
   padding-left: 24px;
   font-weight: 700;
-  background-image: url("../images/footer/Heart.svg");
+  background-image: url("../images/footer/heart.svg");
   background-repeat: no-repeat;
   background-position: left center;
 }
@@ -2169,6 +2169,18 @@ img {
 
 .control-input[type="checkbox"]:checked + .control-mark svg {
   display: block;
+}
+
+.control-input:disabled + .control-mark,
+.control-input:disabled:hover {
+  opacity: .4;
+  border-color: #2D3440;
+  color: #2D3440;
+  cursor: default;
+}
+
+.control-input:disabled ~ .control-label {
+  cursor: default;
 }
 
 .control-mark {
